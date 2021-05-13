@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng kí</title>
+    <script src='control.js'></script>
+</head>
+<body onload="setFocus()">
+    <form>
+        <h1 style="text-align: center;">FORM ĐĂNG KÝ</h1>
+        <table style="margin: auto;">
+            <tr>
+                <td>
+                    Tên truy nhập*
+                </td>
+                <td>
+                    <input type="text" id="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mật khẩu*
+                </td>
+                <td>
+                    <input type="password" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Nhập lại mật khẩu*
+                </td>
+                <td>
+                    <input type="password" id="repassword">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Họ tên*
+                </td>
+                <td>
+                    <input type="txt" id="name">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Phái
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="male" checked>Nam
+                    <input type="radio" name="gender" value="female">Nữ
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Ngày sinh
+                </td>
+                <td>
+                    Ngày <select name="Ngày" id="Ngày">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                      Tháng <select name="Ngày" id="Ngày">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                      Năm <select name="Ngày" id="Ngày">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Sở thích
+                </td>
+                <td>
+                    <input type="checkbox" value="Bóng đá">Bóng đá
+                    <input type="checkbox" value="Bóng chuyền">Bóng chuyền<br>
+                    <input type="checkbox" value="Cầu lông">Cầu lông
+                    <input type="checkbox" value="Bơi lội">Bơi lội
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Hình ảnh
+                </td>
+                <td>
+                    <input type="txt" id="image">
+                    <button type="button" onclick="alert('Hello')">Browse</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>                  
+                </td>
+                <td>
+                    <input onclick="dangki()" type="button" value="Submit">
+                    <input onclick="resetForm()" type="button" value="Xóa">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
